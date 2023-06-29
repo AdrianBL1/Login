@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Autentificacion"
+    android:background="@color/white"
+    android:textAlignment="center">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/perfil"
+        tools:ignore="MissingConstraints" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp">
+
+        <LinearLayout
+            android:id="@+id/authLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/ingresa_correo"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/txt_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/ingresa_contrase_a"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="monospace"
+                android:text="@string/continuar"
+                android:textColorHighlight="#81C784"
+                android:textColorLink="#81C784" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
